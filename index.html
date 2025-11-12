@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Messenger: @Rekz Banz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #19124e;
+      color: #fefeff;
+    }
+    h1 { color: #fefeff; }
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover { background-color: #0056b3; }
+    button:disabled { background-color: #ccc; cursor: default; }
+    .question { margin-bottom: 25px; }
+    .correct { color: #00ff88; font-weight: bold; }
+    .wrong { color: #ff5577; font-weight: bold; }
+    .highlight { margin-top: 10px; }
+    input[type="radio"] { transform: scale(1.5); margin-right: 10px; }
+    #finishBtn { font-size: 2em; padding: .1em 1em; }
+    .nav-buttons { margin-top: 20px; display: flex; gap: 10px; }
+
+    #codeInput {
+      font-size: 15px;
+      padding: 10px 20px;
+      width: 300px;
+      border-radius: 8px;
+      border: 2px solid #888;
+    }
+
+    #codeInput::placeholder { font-size: 15px; }
+
+    /* Smaller font for Enter Access Code */
+    #accessSection h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    /* Style for filename display above access code */
+    #fileDisplay {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #9fe3ff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="accessSection">
+    <p id="fileDisplay"></p> <!-- NEW filename display -->
+    <h2>Enter Access Code</h2>
+    <input type="password" id="codeInput" placeholder="Enter code here" />
+    <br>
+    <button type="button" id="accessSubmit" style="padding:10px 40px; font-size:20px;">Login</button>
+    <p id="message" aria-live="polite"></p>
+    <br>
+    <p id="tipsArea">Loading tips...</p>
+  </div>
+
+  <div id="mainContent" style="display:none;">
+    <div id="reviewerSection">
+      <h1>Reviewer: English 201</h1>
+ 
+ <!-- Lesson 7 -->
+<details>
+  <summary>Lesson 7: Research Instruments</summary>
+  <ul>
+    <li><b>Definition:</b> Carefully designed tools used to gather data systematically and consistently.</li>
+    <li><b>Guidelines:</b>
+      <ul>
+        <li>Perform preliminary research.</li>
+        <li>Ask experts for advice.</li>
+        <li>Clarify research questions.</li>
+        <li>Use proper format, pilot test, and refine instruments.</li>
+      </ul>
+    </li>
+
+    <li><b>Types of Research Instruments:</b></li>
+    <ol>
+      <li><b>Survey</b> – Contains prepared questions to measure attitudes, opinions, and perceptions.
+        <ul>
+          <li>Types of Questions:
+            <ul>
+              <li><b>Recall</b> – Ask for factual info. (Ex: What is your name?)</li>
+              <li><b>Recognition</b> – Multiple choice, Yes/No, rating scale.</li>
+              <li><b>Open-ended</b> – Allows explanations or suggestions.</li>
+            </ul>
+          </li>
+          <li><b>Survey Instruments:</b>
+            <ul>
+              <li><b>Interview</b> – Structured conversation for qualitative data.</li>
+              <li><b>Questionnaire</b> – Written questions for specific information.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><b>Observation</b> – Describes behavior in natural or lab settings.
+        <ul>
+          <li><b>Types:</b>
+            <ul>
+              <li>Participant vs. Non-Participant</li>
+              <li>Structured vs. Unstructured</li>
+              <li>Covert vs. Overt</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><b>Experimental</b> – Manipulates an independent variable to test effects.
+        <ul>
+          <li><b>Steps:</b> Observation → Hypothesis → Design → Conduct → Replicate → Analyze → Conclude</li>
+          <li><b>Guidelines:</b> Obtain consent, ensure safety and confidentiality.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <li><b>Possible Exam Questions:</b>
+      <ol>
+        <li>What is a research instrument? <br><i>Answer:</i> A tool used to systematically collect data.</li>
+        <li>Differentiate recall, recognition, and open-ended questions. <br><i>Answer:</i> Recall—facts; Recognition—choices; Open-ended—suggestions.</li>
+        <li>List the stages of an interview. <br><i>Answer:</i> Pre-Interview, Warm-Up, Main Interview, Closing.</li>
+        <li>What are the three types of observation? <br><i>Answer:</i> Participant/Non-Participant, Structured/Unstructured, Covert/Overt.</li>
+        <li>What are the main steps in conducting an experiment? <br><i>Answer:</i> Observe, hypothesize, design, conduct, replicate, analyze, conclude.</li>
+      </ol>
+    </li>
+  </ul>
+</details>
+
+<!-- Lesson 8 -->
+<details>
+  <summary>Lesson 8: Research Visuals</summary>
+  <ul>
+    <li><b>Definition:</b> Used to illustrate and interpret research findings.</li>
+    <li><b>Guidelines:</b> Ensure clarity, accuracy, simplicity, and proper placement.</li>
+    <li><b>Types of Research Visuals:</b></li>
+    <ol>
+      <li><b>Charts</b> – Show relationships/processes.
+        <ul>
+          <li><b>Flowchart:</b> Shows steps/stages. (Rectangle=Process, Diamond=Decision, Oval=Start/End)</li>
+          <li><b>Organizational Chart:</b> Shows hierarchy. (Solid line=Authority, Dotted line=Collaboration)</li>
+        </ul>
+      </li>
+      <li><b>Tables</b> – Condense data for comparison.
+        <ul>
+          <li><b>Reading:</b> Check title, source, headings.</li>
+          <li><b>Preparing:</b> Use clear layout, spacing, normal text, concise titles.</li>
+        </ul>
+      </li>
+      <li><b>Graphs</b> – Show trends and comparisons.
+        <ul>
+          <li><b>Bar Graph:</b> Compare categories.</li>
+          <li><b>Line Graph:</b> Show changes over time.</li>
+          <li><b>Pie Graph:</b> Show parts of a whole.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <li><b>Possible Exam Questions:</b>
+      <ol>
+        <li>What are the three main types of research visuals? <br><i>Answer:</i> Charts, Tables, Graphs.</li>
+        <li>What shapes are used in a flowchart? <br><i>Answer:</i> Rectangle=Process, Diamond=Decision, Oval=Start/End.</li>
+        <li>What is the difference between bar, line, and pie graphs? <br><i>Answer:</i> Bar–compare data; Line–show trends; Pie–show proportions.</li>
+      </ol>
+    </li>
+  </ul>
+</details>
+
+<!-- Lesson 9 -->
+<details>
+  <summary>Lesson 9: Feasibility Report</summary>
+  <ul>
+    <li><b>Definition:</b> A structured document that evaluates a project's practicality and success potential.</li>
+    <li><b>Stages in Writing:</b>
+      <ol>
+        <li>Clarify Terms of Reference</li>
+        <li>Plan Your Work</li>
+        <li>Collect Information</li>
+        <li>Organize Information</li>
+        <li>Write the First Draft</li>
+        <li>Check and Revise</li>
+      </ol>
+    </li>
+
+    <li><b>Parts of a Feasibility Report:</b>
+      <ol>
+        <li><b>Title Page</b> – Project title, details, members, date.</li>
+        <li><b>Executive Summary</b> – Overview: concept, purpose, findings, recommendations.</li>
+        <li><b>Introduction</b> – Background, problem, solution, criteria.</li>
+        <li><b>Feasibility Analysis</b> – Assess via:
+          <ul>
+            <li>Market/Needs</li>
+            <li>Technical</li>
+            <li>Financial</li>
+            <li>Operational</li>
+            <li>Legal & Ethical</li>
+          </ul>
+        </li>
+        <li><b>Conclusion & Recommendations</b> – Evaluation, limitations, and suggestions.</li>
+      </ol>
+    </li>
+
+    <li><b>Possible Exam Questions:</b>
+      <ol>
+        <li>What is a feasibility report? <br><i>Answer:</i> A document that evaluates the viability of a project.</li>
+        <li>What are the six criteria in a feasibility analysis? <br><i>Answer:</i> Market, Technical, Financial, Operational, Legal, Ethical.</li>
+        <li>What should be included in the Executive Summary? <br><i>Answer:</i> Project concept, purpose, key findings, and recommendations.</li>
+        <li>List the six stages in writing a report. <br><i>Answer:</i> Clarify, Plan, Collect, Organize, Write, Revise.</li>
+      </ol>
+    </li>
+  </ul>
+</details>
+ 
+      <button onclick="showQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quizSection" style="display:none;">
+      <h1>Quiz: English 201</h1>
+      <p style="font-size: 15px; font-weight: 600; margin: 0;">Multiple-Choice Quiz (random items)</p>
+      <form id="quizForm"></form>
+
+      <div class="nav-buttons">
+        <button id="finishBtn">Score</button>
+        <button type="button" onclick="refreshQuiz()">Restart Quiz</button>
+        <button type="button" onclick="backToReviewer()">Reviewer</button>
+      </div>
+      <div id="result" class="highlight"></div>
+    </div>
+  </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // ===== Display filename on login page =====
+  const quizTitleEl = document.querySelector("#quizSection h1");
+  const displayFileName = quizTitleEl ? quizTitleEl.textContent.replace("Quiz: ", "").trim() : "index.html";
+  const fileDisplay = document.getElementById("fileDisplay");
+  if (fileDisplay) fileDisplay.textContent = displayFileName;
+
+  // ===== SETTINGS =====
+  const BIN_URL_CODE = "https://api.jsonbin.io/v3/b/6912958fd0ea881f40e0cafc/latest";
+  const BIN_URL_TIPS = "https://api.jsonbin.io/v3/b/68f1b652ae596e708f180d5d/latest";
+  const MASTER_KEY_CODE = "$2a$10$CvK4w8DTXZ1//5H1cpGQIerIT8Kzvk0FQHosdNm.XS0Q9n6sMmaf6";
+  const MASTER_KEY_TIPS = "$2a$10$CvK4w8DTXZ1//5H1cpGQIerIT8Kzvk0FQHosdNm.XS0Q9n6sMmaf6";
+
+  // === LOGGER BIN (Access Log) ===
+  const BIN_URL_LOG = "https://api.jsonbin.io/v3/b/6911a123d0ea881f40df102a";
+  const MASTER_KEY_LOG = MASTER_KEY_CODE;
+
+  // === SCORE LOG BIN (New) ===
+  const BIN_URL_SCORE = "https://api.jsonbin.io/v3/b/6912985cd0ea881f40e0cf7c";
+  const MASTER_KEY_SCORE = MASTER_KEY_CODE;
+
+  // ===== ELEMENTS =====
+  const accessSection = document.getElementById("accessSection");
+  const mainContent = document.getElementById("mainContent");
+  const codeInput = document.getElementById("codeInput");
+  const accessSubmit = document.getElementById("accessSubmit");
+  const message = document.getElementById("message");
+  const tipsArea = document.getElementById("tipsArea");
+
+  // ===== HELPERS =====
+  function findStringKey(obj, keyName) {
+    if (!obj || typeof obj !== "object") return undefined;
+    for (const k in obj) {
+      if (k.toLowerCase() === keyName.toLowerCase() && typeof obj[k] === "string") {
+        return obj[k];
+      }
+      const v = obj[k];
+      if (typeof v === "object") {
+        const nested = findStringKey(v, keyName);
+        if (nested) return nested;
+      }
+    }
+  }
+
+  async function getDeviceInfo() {
+    const uaData = navigator.userAgentData || {};
+    const ua = navigator.userAgent;
+    const platform = navigator.platform;
+    const language = navigator.language;
+    const screenResolution = `${window.screen.width}x${window.screen.height}`;
+    const browserVersion = uaData.brands
+      ? uaData.brands.map(b => `${b.brand} ${b.version}`).join(", ")
+      : ua;
+
+    // Determine general device type
+    const uaLower = ua.toLowerCase();
+    let deviceType = "desktop";
+    if (/mobi|iphone|android/i.test(uaLower)) {
+      deviceType = "mobile";
+    } else if (/tablet|ipad|nexus 7|nexus 10/i.test(uaLower)) {
+      deviceType = "tablet";
+    }
+
+    // Get approximate IP + region/country info (non-identifying)
+    let networkInfo = "Unavailable";
+    try {
+      const res = await fetch("https://ipapi.co/json/");
+      if (res.ok) {
+        const info = await res.json();
+        networkInfo = {
+          ip: info.ip,
+          city: info.city,
+          region: info.region,
+          country: info.country_name,
+          org: info.org
+        };
+      }
+    } catch {
+      networkInfo = "Network lookup failed";
+    }
+
+    // Optional: request geolocation with user consent
+    const location = await new Promise(resolve => {
+      if (!navigator.geolocation) return resolve("Geolocation not supported");
+      navigator.geolocation.getCurrentPosition(
+        pos => resolve({
+          latitude: pos.coords.latitude,
+          longitude: pos.coords.longitude,
+          accuracy: pos.coords.accuracy
+        }),
+        () => resolve("Permission denied or unavailable"),
+        { timeout: 5000 }
+      );
+    });
+
+    return {
+      ua,
+      browserVersion,
+      platform,
+      language,
+      screenResolution,
+      deviceType,
+      networkInfo,
+      location
+    };
+  }
+
+  async function saveLoginToJsonBin(codeUsed) {
+    try {
+      // get filename from quiz title h1
+      const quizTitleElLocal = document.querySelector("#quizSection h1");
+      const fileName = quizTitleElLocal ? quizTitleElLocal.textContent.replace("Quiz: ", "").trim() : "index.html";
+
+      const getRes = await fetch(`${BIN_URL_LOG}/latest`, {
+        headers: { "X-Master-Key": MASTER_KEY_LOG }
+      });
+      const data = await getRes.json();
+      const logs = Array.isArray(data.record) ? data.record : [];
+
+      const deviceInfo = await getDeviceInfo();
+
+      logs.push({
+        event: "Login Access",
+        accessCode: codeUsed,
+        filename: fileName,
+        timestamp: new Date().toLocaleString(),
+        device: deviceInfo
+      });
+
+      await fetch(BIN_URL_LOG, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Master-Key": MASTER_KEY_LOG
+        },
+        body: JSON.stringify(logs)
+      });
+
+      console.log(`✅ Login logged successfully (file: ${fileName}).`);
+    } catch (err) {
+      console.error("❌ Error logging to JSONBin:", err);
+    }
+  }
+
+  // ===== LOAD TIPS =====
+  async function loadTips() {
+    try {
+      const resp = await fetch(BIN_URL_TIPS, {
+        headers: { "X-Master-Key": MASTER_KEY_TIPS, "Content-Type": "application/json" }
+      });
+      const data = await resp.json();
+      const tipsText =
+        findStringKey(data, "tips") ||
+        "Tips: <br>Press Enter after typing the code.<br>Stay online when entering.<br>For help, contact juan.tipak@gmail.com.";
+      tipsArea.innerHTML = tipsText;
+    } catch (err) {
+      console.error("Tips fetch error:", err);
+      tipsArea.innerHTML =
+        "Could not load page. Please check your internet connection.";
+    }
+  }
+  loadTips();
+
+  // === NEW FUNCTION: Save Quiz Score to JSONBin ===
+  async function saveScoreToJsonBin(score, total) {
+    try {
+      const quizTitleElLocal = document.querySelector("#quizSection h1");
+      const fileName = quizTitleElLocal ? quizTitleElLocal.textContent.replace("Quiz: ", "").trim() : "index.html";
+
+      const getRes = await fetch(`${BIN_URL_SCORE}/latest`, {
+        headers: { "X-Master-Key": MASTER_KEY_SCORE }
+      });
+      const data = await getRes.json();
+      const logs = Array.isArray(data.record) ? data.record : [];
+      const deviceInfo = await getDeviceInfo();
+
+      logs.push({
+        event: "Quiz Score",
+        score: `${score}/${total}`,
+        filename: fileName,
+        timestamp: new Date().toLocaleString(),
+        device: deviceInfo
+      });
+
+      await fetch(BIN_URL_SCORE, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Master-Key": MASTER_KEY_SCORE
+        },
+        body: JSON.stringify(logs)
+      });
+      console.log("✅ Quiz score saved to JSONBin successfully.");
+    } catch (err) {
+      console.error("❌ Error saving quiz score:", err);
+    }
+  }
+
+  // ===== LOCAL STORAGE =====
+  const fileName = window.location.pathname.split("/").pop() || "default";
+  const storageKey = "savedAccessCode_" + fileName.replace(/\W+/g, "_");
+  const savedCode = localStorage.getItem(storageKey);
+  if (savedCode) codeInput.value = savedCode;
+  codeInput.addEventListener("input", () =>
+    localStorage.setItem(storageKey, codeInput.value)
+  );
+
+  // ===== LOGIN HANDLER =====
+  codeInput.addEventListener("keyup", (e) => {
+    if (e.key === "Enter") accessSubmit.click();
+  });
+
+  accessSubmit.addEventListener("click", async () => {
+    const input = codeInput.value.trim();
+    if (!input) {
+      message.textContent = "Please enter the access code.";
+      return;
+    }
+
+    accessSubmit.disabled = true;
+    codeInput.disabled = true;
+    message.textContent = "Checking...";
+
+    try {
+      const resp = await fetch(BIN_URL_CODE, {
+        headers: { "X-Master-Key": MASTER_KEY_CODE, "Content-Type": "application/json" }
+      });
+
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const data = await resp.json();
+
+      const remoteCode =
+        findStringKey(data, "accessCode") ||
+        findStringKey(data, "code") ||
+        findStringKey(data, "access");
+
+      if (!remoteCode) {
+        message.textContent = "Access code not found in storage record.";
+        throw new Error("No accessCode in JSON");
+      }
+
+      if (input === remoteCode.trim()) {
+        accessSection.style.display = "none";
+        mainContent.style.display = "block";
+        message.textContent = "";
+        saveLoginToJsonBin(input); // <<== AUTO LOG TO JSONBIN
+        setTimeout(() => {
+          const btn = document.querySelector("#mainContent button");
+          if (btn) btn.focus();
+        }, 100);
+      } else {
+        message.textContent = "Wrong code. Please contact: juan.tipak@gmail.com";
+        localStorage.removeItem(storageKey);
+        accessSubmit.disabled = false;
+        codeInput.disabled = false;
+      }
+    } catch (err) {
+      console.error("Access fetch error:", err);
+      message.textContent = "Error fetching code. Check console for details.";
+      accessSubmit.disabled = false;
+      codeInput.disabled = false;
+    }
+  });
+
+  // ===== QUIZ LOGIC =====
+  const pool = [
+  
+  
+    {q:"What are research instruments primarily designed to do?",choices:["Gather data systematically","Interpret visuals","Perform statistical analysis","Write conclusions","Present feasibility","Create charts"],correctIndex:0},
+  {q:"Which guideline requires consulting knowledgeable individuals when preparing instruments?",choices:["Ask experts for advice","Use complex language","Skip pilot testing","Ignore demographics","Avoid editing","Limit respondent number"],correctIndex:0},
+  {q:"Which type of survey question asks for specific information like age or address?",choices:["Recall","Recognition","Open-ended","Ranking","Scale-based","Opinion"],correctIndex:0},
+  {q:"Recognition questions typically involve what?",choices:["Choosing from set options","Explaining opinions","Providing names","Drawing visuals","Listing events","Summarizing"],correctIndex:0},
+  {q:"Open-ended questions primarily aim to:",choices:["Elicit brief explanations","Provide fixed choices","Restrict answers","Rank preferences","Collect demographics","Direct approval"],correctIndex:0},
+  {q:"Which survey instrument gathers qualitative data through structured conversation?",choices:["Interview","Questionnaire","Observation","Experiment","Flowchart","Graph"],correctIndex:0},
+  {q:"What occurs during the warm-up stage of an interview?",choices:["Purpose and confidentiality explained","Hypothesis set","Data analyzed","Results graphed","Consent denied","Conclusion drafted"],correctIndex:0},
+  {q:"Which stage of an interview includes thanking the participant?",choices:["Closing","Warm-up","Main interview","Pre-interview","Design","Drafting"],correctIndex:0},
+  {q:"What are questionnaires primarily composed of?",choices:["Written questions","Video prompts","Audio files","Photo slides","Data sets","Maps"],correctIndex:0},
+  {q:"Which questionnaire part confirms the respondent fits the study?",choices:["Basic questions","Personal information","Main questions","Open-ended","References","Hypothesis"],correctIndex:0},
+  {q:"Which questionnaire section deals directly with the research topic?",choices:["Main questions","Basic questions","Personal information","Recommendations","Consent","Demographics"],correctIndex:0},
+  {q:"Which instrument describes behavior in natural or laboratory settings?",choices:["Observation","Interview","Survey","Questionnaire","Flowchart","Pie chart"],correctIndex:0},
+  {q:"In participant observation, the researcher:",choices:["Interacts with subjects","Remains hidden","Uses only surveys","Runs experiments","Builds visuals","Supervises finances"],correctIndex:0},
+  {q:"Structured observation requires:",choices:["A list of behaviors","Silent participants","Written surveys","Exams","Charts","Drafts"],correctIndex:0},
+  {q:"Covert observation means subjects are:",choices:["Unaware of observation","Fully trained","Supervised legally","Shown surveys","Invited to graph","Drafting reports"],correctIndex:0},
+  {q:"An experiment manipulates which variable?",choices:["Independent variable","Dependent variable","Controlled variable","External variable","Incidental variable","Unrelated variable"],correctIndex:0},
+  {q:"The first step of an experiment is to:",choices:["Make observations","Conduct hypothesis","Analyze results","Clean venue","Publish report","Check graphs"],correctIndex:0},
+  {q:"What must be obtained from experiment participants?",choices:["Informed consent","Personal property","Certificates","Income data","Mandates","Pie charts"],correctIndex:0},
+  {q:"Which is a guideline during experiments?",choices:["Maintain professional atmosphere","Ignore safety","Force participation","Skip analysis","Remove consent","Hide procedures"],correctIndex:0},
+  {q:"Research visuals are used to:",choices:["Illustrate findings","Collect interviews","Destroy drafts","Supervise labs","Conduct exams","Hire subjects"],correctIndex:0},
+  {q:"Which guideline applies to research visuals?",choices:["Ensure accuracy","Avoid references","Use complex colors","Scatter pages","Skip captions","Hide labels"],correctIndex:0},
+  {q:"Flowcharts primarily show:",choices:["Steps in sequence","Opinions","Trends over time","Percent distribution","Market analysis","Finances"],correctIndex:0},
+  {q:"In flowcharts, rectangles represent:",choices:["Process steps","Start/end","Decision","Failure","Interruption","Data point"],correctIndex:0},
+  {q:"Diamond symbols in flowcharts indicate:",choices:["Decision points","Start/end","Data storage","People","Records","Scale"],correctIndex:0},
+  {q:"Organizational charts visually show:",choices:["Ranks and hierarchy","Trends","Percentages","Experiments","Pilots","Hypotheses"],correctIndex:0},
+  {q:"In organizational charts, dotted lines indicate:",choices:["Collaboration","Authority","Conclusion","Start","Failure","Budget"],correctIndex:0},
+  {q:"Tables mainly:",choices:["Condense info for comparison","Show trends","Record audio","Explain theory","Test hypotheses","Rank colors"],correctIndex:0},
+  {q:"A formal table must have:",choices:["Title and number","No title","Hidden labels","Only text","No headings","Charts"],correctIndex:0},
+  {q:"A bar graph compares data mainly using:",choices:["Bars","Lines","Slices","Dots","Sentences","Maps"],correctIndex:0},
+  {q:"Bar graph prep should maintain:",choices:["Consistent bar width","Removed labels","All caps text","No headings","No spacing","Hidden axes"],correctIndex:0},
+  {q:"Line graphs are best for showing:",choices:["Trends over time","Hierarchy","Percent composition","Market value","Locations","Random data"],correctIndex:0},
+  {q:"On a line graph, the horizontal axis usually represents:",choices:["Time","Amount","Cost","People","Colors","Rank"],correctIndex:0},
+  {q:"Pie graphs show:",choices:["Portions of a whole","Trends","Processes","Costs","Hypotheses","Columns"],correctIndex:0},
+  {q:"Pie graphs should ideally have no more than:",choices:["7 slices","3 slices","20 slices","15 slices","1 slice","18 slices"],correctIndex:0},
+  {q:"The first step in writing a feasibility report is to:",choices:["Clarify terms of reference","Draft conclusion","Print copies","Submit to market","Graph costs","Rank visuals"],correctIndex:0},
+  {q:"A feasibility report evaluates whether a project is:",choices:["Realistic and worth pursuing","Aesthetically pleasing","Unnecessary","Guaranteed","Silent","Anonymous"],correctIndex:0},
+  {q:"Which report part briefly summarizes concept, purpose, findings, and recommendations?",choices:["Executive summary","Conclusion","Title page","Introduction","Glossary","Appendix"],correctIndex:0},
+  {q:"Which part provides background and proposed solution?",choices:["Introduction","Title page","Summary","Glossary","Index","Legend"],correctIndex:0},
+  {q:"Feasibility analysis commonly includes which criterion?",choices:["Financial feasibility","Interview warmth","Flowchart form","Rating color","Draft spacing","Pie width"],correctIndex:0},
+  {q:"Operational feasibility assesses:",choices:["Project practicality","Graph structure","Interview order","Random errors","Bar color","Report length"],correctIndex:0},
+  {q:"Which feasibility criterion concerns compliance and fairness?",choices:["Legal and ethical","Market trend","Personal taste","Color coding","Draft spacing","Line width"],correctIndex:0},
+  {q:"Decimal numbering (1, 1.1, 1.2) is used in which?",choices:["Report layout","Graph prep","Table reference","Consent form","Survey recall","Pie labels"],correctIndex:0},
+  {q:"Which report step involves outlining tasks and deadlines?",choices:["Plan your work","Draft visuals","Collect payments","Skip edit","Watch graphs","Rank bars"],correctIndex:0},
+  {q:"Pilot testing research instruments helps:",choices:["Improve quality","Hide data","Avoid edits","Ignore respondents","Eliminate questions","Stop analysis"],correctIndex:0},
+  {q:"Personal information in a questionnaire may include:",choices:["Age and address","Theory summary","Pie labels","Flowchart colors","Hypothesis","Bar width"],correctIndex:0},
+  {q:"Basic questionnaire questions help:",choices:["Ensure respondent fits study","Summarize results","Draft glossary","Rank visuals","Skip consent","Hide data"],correctIndex:0},
+  {q:"Main questions in questionnaires are:",choices:["Research-related","Optional only","All personal","Always covert","Off-topic","Random"],correctIndex:0},
+  {q:"Which observation type records behavior without interacting?",choices:["Non-participant","Participant","Structured","Covert","Overt","Experimental"],correctIndex:0},
+  {q:"Unstructured observation lets behavior:",choices:["Emerge naturally","Follow list","Be graphed","Use labels","Ranked","Drafted"],correctIndex:0},
+  {q:"A researcher living in a community to observe is:",choices:["Participant observation","Non-participant","Covert only","Overt only","Structured only","Experimental"],correctIndex:0},
+  {q:"Cleaning the venue is a guideline during:",choices:["Experiment","Interview","Survey","Table prep","Flowcharting","Indexing"],correctIndex:0},
+  {q:"A feasibility report’s conclusion includes:",choices:["Assessment and limitations","Pie slices","Flowchart shapes","Personal info","Music","Color codes"],correctIndex:0}
+
+
+  ];
+
+  function pickRandom(arr, n) {
+    const copy = [...arr];
+    const result = [];
+    while (result.length < n && copy.length > 0) {
+      const idx = Math.floor(Math.random() * copy.length);
+      result.push(copy.splice(idx, 1)[0]);
+    }
+    return result;
+  }
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  function selectRandomChoices(item) {
+    const correctChoice = item.choices[item.correctIndex];
+    let others = item.choices.filter((_, idx) => idx !== item.correctIndex);
+    shuffleArray(others);
+    let selected = [correctChoice, ...others.slice(0, 4)];
+    shuffleArray(selected);
+    item.correctIndex = selected.indexOf(correctChoice);
+    item.choices = selected;
+  }
+
+  let quizItems = [];
+
+  window.showQuiz = function () {
+    document.getElementById("reviewerSection").style.display = "none";
+    document.getElementById("quizSection").style.display = "block";
+    buildQuiz();
+  };
+
+  window.backToReviewer = function () {
+    document.getElementById("quizSection").style.display = "none";
+    document.getElementById("reviewerSection").style.display = "block";
+    document.getElementById("quizForm").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
+  };
+
+  window.refreshQuiz = function () {
+    document.getElementById("quizForm").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("finishBtn").disabled = false;
+    buildQuiz();
+  };
+
+  function buildQuiz() {
+    quizItems = pickRandom(pool, Math.min(20, pool.length));
+    const form = document.getElementById("quizForm");
+    form.innerHTML = "";
+    quizItems.forEach((item, i) => {
+      selectRandomChoices(item);
+      const div = document.createElement("div");
+      div.className = "question";
+      const q = document.createElement("p");
+      q.textContent = `${i + 1}. ${item.q}`;
+      div.appendChild(q);
+      item.choices.forEach((choice, idx) => {
+        const label = document.createElement("label");
+        const radio = document.createElement("input");
+        radio.type = "radio";
+        radio.name = `q${i}`;
+        radio.value = idx;
+        label.appendChild(radio);
+        label.appendChild(document.createTextNode(" " + choice));
+        div.appendChild(label);
+        div.appendChild(document.createElement("br"));
+      });
+      form.appendChild(div);
+    });
+  }
+
+  document.getElementById("finishBtn").addEventListener("click", async function () {
+    let score = 0;
+    const total = quizItems.length;
+    for (let i = 0; i < total; i++) {
+      const radios = document.querySelectorAll(`input[name="q${i}"]`);
+      let selected = -1;
+      radios.forEach(r => { if (r.checked) selected = parseInt(r.value); });
+      const div = document.getElementById("quizForm").children[i];
+      if (selected === quizItems[i].correctIndex) {
+        score++;
+        div.insertAdjacentHTML("beforeend", "<div class='correct'>✔ Correct</div>");
+      } else {
+        const correctAnswer = quizItems[i].choices[quizItems[i].correctIndex];
+        div.insertAdjacentHTML("beforeend", `<div class='wrong'>✘ Wrong. Correct: ${correctAnswer}</div>`);
+      }
+      radios.forEach(r => r.disabled = true);
+    }
+    document.getElementById("result").innerHTML = `<h2>Your Score: ${score} / ${total}</h2>`;
+    this.disabled = true;
+
+    // 🧠 Save score to JSONBin
+    await saveScoreToJsonBin(score, total);
+  });
+});
+</script>
+</body>
+</html>
